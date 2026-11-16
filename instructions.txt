@@ -86,4 +86,19 @@ do arquivo main.py para preservar os dados.
 - As alterações são preservadas quando o usuário
   seleciona a opção "Salvar e sair".
 
+6. SEGURANÇA E VALIDAÇÃO
+
+O programa verifica os registros carregados antes de utilizá-los.
+
+São rejeitados registros com:
+- Identificadores inválidos ou duplicados;
+- Nomes vazios ou inválidos;
+- Quantidades negativas ou não inteiras.
+
+Se ocorrer um erro na leitura ou validação do arquivo,
+o salvamento será bloqueado para preservar os dados originais.
+
+Durante alterações, todas as informações são validadas
+antes de modificar o registro.
+
 Desenvolvido em Python 3.
