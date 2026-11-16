@@ -1,0 +1,89 @@
+CATÁLOGO PESSOAL DE MATERIAIS DE ESTUDO
+=======================================
+
+1. SOBRE O PROJETO
+
+Este programa permite organizar materiais de estudo por meio de
+um catálogo interativo desenvolvido em Python.
+
+Cada material possui:
+- Identificador único;
+- Nome;
+- Quantidade inteira não negativa.
+
+2. COMO EXECUTAR
+
+É necessário ter o Python 3 instalado.
+
+Abra o terminal na pasta do projeto e execute:
+
+python3 main.py
+
+No Windows, também é possível utilizar:
+
+python main.py
+
+3. COMO UTILIZAR
+
+Ao iniciar, o programa apresenta um menu com cinco opções:
+
+1 - Cadastrar material:
+    Permite adicionar um novo material ao catálogo,
+    informando seu nome e sua quantidade.
+
+2 - Listar materiais:
+    Exibe todos os materiais cadastrados e suas informações.
+
+3 - Localizar material:
+    Permite encontrar um material utilizando seu identificador.
+
+4 - Alterar material:
+    Permite modificar o nome, a quantidade ou ambos,
+    utilizando o identificador do material.
+
+5 - Salvar e sair:
+    Salva os dados no arquivo e encerra o programa.
+
+4. ARMAZENAMENTO DOS DADOS
+
+Os dados são armazenados no arquivo:
+
+catalogo.json
+
+O arquivo utiliza o formato JSON (JavaScript Object Notation).
+
+Exemplo de conteúdo:
+
+[
+    {
+        "id": 1,
+        "nome": "Caderno",
+        "quantidade": 3
+    },
+    {
+        "id": 2,
+        "nome": "Caneta",
+        "quantidade": 5
+    }
+]
+
+O arquivo é criado automaticamente quando o catálogo
+é salvo pela primeira vez.
+
+Ao iniciar uma nova execução, o programa carrega
+automaticamente os dados existentes.
+
+IMPORTANTE:
+Mantenha o arquivo catalogo.json na mesma pasta
+do arquivo main.py para preservar os dados.
+
+5. OBSERVAÇÕES
+
+- Os identificadores são gerados automaticamente.
+- Não existem identificadores duplicados.
+- A quantidade pode ser zero, mas nunca negativa.
+- É possível realizar várias operações na mesma execução.
+- As alterações são preservadas quando o usuário
+  seleciona a opção "Salvar e sair".
+
+Desenvolvido em Python 3.
